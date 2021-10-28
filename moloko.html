@@ -1,0 +1,168 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Фермерская продукция Томск</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Подключаем шрифт -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+		<!-- Кодировка страницы -->
+		<meta charset="UTF-8">
+		<!-- Адаптив -->
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<!-- Оболочка (grid-контейнер) -->
+		<div class="wrapper">
+			<!-- Шапка (grid - элемент) -->
+			<header class="header">
+                <a href="index.html" class="header__logo"><img src="img/eshderevenskoe.svg" alt="Ферма Томск"></a>
+                <a href="index.html" class="header__logo_mobile"><img src="img/logo_mobile.png" alt="Ферма Томск"></a>
+                <a href="" class="header__korzina"><img src="img/img_menu/korzina.svg " class="header_korzina_img" alt="Корзина"></a>
+                 <nav class="navbar">
+                <ul class="nav__menu">
+                <li><a href="moloko.html" class="nav__link"><img src="img/img_menu/milk-cheese-and-eggs.svg" alt="Молоко,сыр,яйца" class="sidebar__img"><h5>Молоко,сыр,яйца</h5></a></li>
+                <li><a href="" class="nav__link"><img src="img/img_menu/meat-and-poultry.svg" alt="Мясо и птица" class="sidebar__img"><h5>Мясо и птица</h5></a></li>
+                <li><a href="" class="nav__link"><img src="img/img_menu/fruits-and-veggies.svg" alt="Овощи и фрукты" class="sidebar__img"><h5>Овощи и фрукты</h5></a></li>
+                <li><a href="" class="nav__link"><img src="img/img_menu/bakery.svg" alt="Кулинария и хлеб" class="sidebar__img"><h5>Кулинария и хлеб</h5></a></li>
+                <li><a href="#" class="nav__link"><img src="img/img_menu/sweets.svg" alt="Сладости" class="sidebar__img"><h5>Сладости</h5></a></li>
+                <li><a href="#" class="nav__link"><img src="img/img_menu/grocery.svg" alt="Бакалея" class="sidebar__img"><h5>Бакалея</h5></a></li>
+                <li><a href="#" class="nav__link"><img src="img/img_menu/fish.svg" alt="Рыба" class="sidebar__img"><h5>Рыба</h5></a></li>
+                <li><a href="#" class="nav__link"><img src="img/img_menu/frozen.svg" alt="Заморозка" class="sidebar__img"><h5>Заморозка</h5></a></li>
+                </ul>
+                <div class="hamb">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        </nav>
+			</header>
+			<script src="js/js.js"></script>
+			<!-- Контент (grid-элемент + grid-контейнер) -->
+			<main class="main">
+				<!-- Сайдбар (grid-элемент) -->
+				<!-- <aside class="sidebar">
+					<nav class="sidebar__menu">
+						<ul class="sidebar__list">
+							<li><a href="moloko.html" class="sidebar__link"><img src="img/img_menu/milk-cheese-and-eggs.svg" alt="Молоко,сыр,яйца" class="sidebar__img"><h5>Молоко,сыр,яйца</h5></a></li>
+							<li><a href="#" class="sidebar__link"><img src="img/img_menu/meat-and-poultry.svg" alt="Мясо и птица" class="sidebar__img"><h5>Мясо и птица</h5></a></li>
+							<li><a href="#" class="sidebar__link"><img src="img/img_menu/fruits-and-veggies.svg" alt="Овощи и фрукты" class="sidebar__img"><h5>Овощи и фрукты</h5></a></li>
+							<li><a href="#" class="sidebar__link"><img src="img/img_menu/bakery.svg" alt="Кулинария и хлеб" class="sidebar__img"><h5>Кулинария и хлеб</h5></a></li>
+							<li><a href="#" class="sidebar__link"><img src="img/img_menu/sweets.svg" alt="Сладости" class="sidebar__img"><h5>Сладости</h5></a></li>
+							<li><a href="#" class="sidebar__link"><img src="img/img_menu/grocery.svg" alt="Бакалея" class="sidebar__img"><h5>Бакалея</h5></a></li>
+							<li><a href="#" class="sidebar__link"><img src="img/img_menu/fish.svg" alt="Рыба" class="sidebar__img"><h5>Рыба</h5></a></li>
+							<li><a href="#" class="sidebar__link"><img src="img/img_menu/frozen.svg" alt="Заморозка" class="sidebar__img"><h5>Заморозка</h5></a></li>
+						</ul>
+					</nav>
+				</aside> -->
+				<!-- Контент (grid-элемент) -->
+				<section class="content">
+					<h1>Доставка продуктов от фермеров на дом!</h1>
+					<!-- <section class="content__gallery gallery">
+						<h2 class="gallery__title">Галерея</h2>
+						<div class="gallery__items">
+							<div class="gallery__item gallery__item_big">
+								<img src="img/01.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/02.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/03.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/04.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/05.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/06.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/07.jpg" alt="">
+							</div>
+							<div class="gallery__item gallery__item_big">
+								<img src="img/08.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/09.jpg" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/10.jpg" alt="">
+							</div>
+						</div>
+					</section> -->
+					<section class="content__products_products">
+						<h2 class="products__title">Молочная продукция</h2>
+						<div class="products__items">
+							<div class="products__item">
+								<div class="products__image">
+									<img src="img/moloko/moloko1.jpg" alt="">
+								</div>
+								<div class="products__name">Яйца</div>
+								<a href="" class="products__button">Купить</a>
+							</div>
+							<div class="products__item">
+								<div class="products__image">
+									<img src="img/moloko/moloko2.jpg" alt="">
+								</div>
+								<div class="products__name">Молоко</div>
+								<a href="" class="products__button">Купить</a>
+							</div>
+							<div class="products__item">
+								<div class="products__image">
+									<img src="img/moloko/maslo.jpg" alt="">
+								</div>
+								<div class="products__name">Масло</div>
+								<a href="" class="products__button">Купить</a>
+							</div>
+							<div class="products__item">
+								<div class="products__image">
+									<img src="img/moloko/sir.jpg" alt="">
+								</div>
+								<div class="products__name">Сыр</div>
+								<a href="" class="products__button">Купить</a>
+							</div>
+							<div class="products__item">
+								<div class="products__image">
+									<img src="img/moloko/sir1.jpg" alt="">
+								</div>
+								<div class="products__name">Сыр</div>
+								<a href="" class="products__button">Купить</a>
+							</div>
+							<div class="products__item">
+								<div class="products__image">
+									<img src="img/moloko/tvorog.jpg" alt="">
+								</div>
+								<div class="products__name">Творог</div>
+								<a href="" class="products__button">Купить</a>
+							</div>
+						</div>
+					</section>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__copy">Терентьев Руслан, 2021</div>
+				<ul class="footer_list">
+						<li><a href="" class="footer_social"><img src="img/social/whatsapp.png" alt="whatsapp" class="social"></a></li>
+						<li><a href="" class="footer_social"><img src="img/social/telegram.png" alt="whatsapp" class="social"></a></li>
+						<li><a href="" class="footer_social"><img src="img/social/instagram.png" alt="whatsapp" class="social"></a></li>
+						<li><a href="" class="footer_social"><img src="img/social/youtube.png" alt="whatsapp" class="social"></a></li>
+						<!-- <li><a href="" class="header__link1">Корзина</a></li> -->
+					</ul>
+				<!-- <a href="#" class="whatsapp__link"><img src="img/whatsapp.png" alt="whatsapp" class="social"><img src="img/whatsapp.png" alt="whatsapp" class="social"></a> -->
+
+				<div class="footer__text">+79999999999</div>
+				
+			</footer>
+		</div>
+	</body>
+</html>
